@@ -174,3 +174,49 @@ footer h6{
 }
 
 /*FAQ*/
+
+/*photosessions*/
+.row-padding-0{
+	margin: 0;
+}
+#photosessions h3{
+	margin-bottom: 6px;
+}
+
+
+
+a.underline-link{
+	display: inline-block;
+	font-size: 28px;
+	color: #00cbc7;
+	font-weight: lighter;
+	line-height: 1;
+	text-decoration:none;
+    cursor: pointer;
+
+}
+a.underline-link:after {
+    display: block;
+    content: "";
+    margin-top: 7px;
+    height: 1px;
+    background: #00cbc7;
+    width: 0%;
+     -webkit-transition: width .8s ease-in-out;
+    -moz-transition: width .8s ease-in-out;
+    -o-transition: width .8s ease-in-out;
+    transition: width .8s ease-in-out;
+}
+a.underline-link:hover:after,
+a.underline-link:focus:after {
+    width: 100%;
+}
+.date-time{
+	color: #aeadad;
+	font-size: 15px;
+	font-weight: lighter;
+}
+.short-description{
+	margin-bottom: 30px;
+}
+/*photosessions*/
