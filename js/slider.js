@@ -1,16 +1,12 @@
 $(document).ready(function(){
 
 	// Открытие слайдов
-	$('.open-photo').click(function(enent){
-		event.preventDefault();
-		var id = $(this).attr('href').slice(1);
-		$(this).next('.modalDialog').addClass('open-popup-image animated fadeIn');
-		
+	$('.open-photo').click(function(){
+		var id = $(this).attr('data-target');
+		$('#'+id).addClass('open-popup-image animated fadeIn');
 		$('#'+id).children('.max-img-wrapper').addClass('animated zoomIn');
 
-		var height = window.screen.availHeight;
 
-		// $(this)
 	});
 
 	// закрытие окна
@@ -27,7 +23,6 @@ $(document).ready(function(){
 	// Перелистывание слайдов 
 	$('.control-arrows').click(function(){
 
-
 		var id = $(this).closest('.modalDialog').attr('id');
 
 		var numberId = id.slice(9);
@@ -40,7 +35,9 @@ $(document).ready(function(){
 		}
 
 		var newId = '#openModal' + resultNum;
-		$('.modalDialog').removeClass('open-popup-image animated fadeIn');
+	
+
+		$('#'+id).removeClass("open-popup-image animated fadeIn");
 		$('#'+id).children('.max-img-wrapper').removeClass('animated zoomIn');
 
 		$(newId).addClass('open-popup-image');

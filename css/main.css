@@ -176,6 +176,9 @@ footer h6{
 /*FAQ*/
 
 /*photosessions*/
+#photosessions{
+	padding-bottom: 40px;
+}
 .row-padding-0{
 	margin: 0;
 }
@@ -219,4 +222,129 @@ a.underline-link:focus:after {
 .short-description{
 	margin-bottom: 30px;
 }
+
+/*button css*/
+.wrapper-inner-tab-backgrounds-second{
+}
+.sim-button{
+	line-height: 50px;
+	height: 50px;
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+	margin-top: 30px;
+	cursor: pointer;
+}
+.button29 {
+	color: rgba(0,0,0,1);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	position: relative;
+	border-right-width: 1px;
+	border-left-width: 1px;
+	border-right-style: solid;
+	border-left-style: solid;
+	border-right-color: rgba(0,0,0,0.5);
+	border-left-color: rgba(0,0,0,0.5);
+
+}
+.button29 span{
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	}
+.button29:hover span{
+	letter-spacing: 2px;
+	}
+.button29:hover{
+	border-right-color: rgba(0,0,0,0);
+	border-left-color: rgba(0,0,0,0);
+}
+
+.button29 a{
+	color: rgba(51,51,51,1);
+	text-decoration: none;
+	display: block;
+}
+.button29::before{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	background-color: rgba(0,0,0,0.5);
+	
+}
+.button29:hover::before{
+	-webkit-transform: translate(0,-25px) rotate(-45deg);
+	-moz-transform: translate(0,-25px) rotate(-45deg);
+	transform: translate(0,-25px) rotate(-45deg);
+}
+.button29::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 1px;
+	z-index: 1;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	transition: all 0.3s;
+	background-color: rgba(0,0,0,0.5);
+}
+.button29:hover::after{
+	-webkit-transform: translate(0,25px) rotate(45deg);
+	-moz-transform: translate(0,25px) rotate(45deg);
+	transform: translate(0,25px) rotate(45deg);
+}
+/*.button{
+	display: block;
+	height: 50px;
+	line-height: 50px;
+	color: black;
+	border: 1px solid black;
+	width: 185px;
+	text-align: center;
+	margin-top: 25px;
+}
+.button:hover{
+	text-decoration: none;
+	color: black;
+}*/
+.photosession-preview-wrapper{
+	padding-bottom: 50px;
+}
+
+/*pagination*/
+.pagination {
+	margin: 0 auto;
+    display: inline-block;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+
+.pagination a.active {
+    background-color: #00cbc7;
+    color: white;
+}
+
+.pagination a:hover:not(.active) {background-color: #ddd;}
+/*pagination*/
+
 /*photosessions*/
