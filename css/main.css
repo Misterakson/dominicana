@@ -16,7 +16,7 @@ body{
 	background: url('../img/logo.png') center center / cover;
 }
 
-#navbar {
+/*#navbar {
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -47,7 +47,25 @@ body{
   	display: inline-block;
   	letter-spacing: 5px;
 
+}*/
+.nav-wrapper{
+	margin-top: 30px;
+    font-weight: 600;
 }
+.navbar{
+	border: 0px;
+	font-family: 'Century Gothic';
+	letter-spacing: 5px;
+	text-transform: capitalize;
+}
+.navbar-brand img{
+	height: 100px;
+}
+
+.navbar-brand {
+	height: auto;
+}
+
 
 header .page_title{
 	font-size: 30px;
