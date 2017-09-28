@@ -13,6 +13,9 @@ body{
 	/*font-family: 'Century Gothic';*/
 	font-family: 'Arial', sans-serif;
 }
+.body-wrapper{
+	overflow-x: hidden!important;
+}
 
 /*header*/
 
@@ -64,6 +67,7 @@ header .page_title{
 	font-weight: lighter;
 	padding-bottom: 30px;
 	padding-top: 20px;
+	text-transform: uppercase;
 }
 
 /*header*/
@@ -431,3 +435,33 @@ a.underline-link:focus:after {
 }
 /*contacts page*/
 
+/*about page*/
+
+.about-page-icon{
+	width: 40px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+.about-first-paragraph{
+	font-size: 16px;
+	line-height: 34px;
+}
+.about-paragraph-title{
+	color: #00bbc5;
+	font-size: 20px;
+}
+.about-paragraph-content{
+	font-size: 15px;
+	line-height: 34px;
+}
+.about-first-section{
+	padding-bottom: 50px;
+}
+.about-photo {
+	max-width: 100%;
+}
+#about-page{
+	padding-bottom: 75px;
+}
+
+/*about page*/
