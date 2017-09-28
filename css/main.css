@@ -3,10 +3,15 @@
 	font-family: Open sans;
 	src: url(../font/2211.ttf);
 }
+@font-face{
+	font-family: Century Gothic;
+	src: url(../font/Gothic.ttf);
+}
 
 body{
-	font-family: 'Open sans';
+	font-family: 'Open Sans', sans-serif;
 	/*font-family: 'Century Gothic';*/
+	font-family: 'Arial', sans-serif;
 }
 
 /*header*/

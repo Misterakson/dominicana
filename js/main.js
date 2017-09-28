@@ -1,5 +1,6 @@
 $(document).ready(function(){
 
+// accotdion
 	$('.question_title').click(function(){
 
 		$(this).siblings().slideToggle();
@@ -16,5 +17,20 @@ $(document).ready(function(){
 
 
 	});
+// accotdion
 
+// magnific popup
+	$('.photo-preview-wrapper').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+    	delegate: 'a',
+        type: 'image',
+        removeDelay: 300,
+		mainClass: 'mfp-fade',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+
+// magnific popup
 });

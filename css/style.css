@@ -1,132 +1,50 @@
-.modalDialog {
-    position: fixed;
-    font-family: Arial, Helvetica, sans-serif;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background: rgba(0,0,0,0.8);
-    z-index: 99999;
-    transition: 1s ease-in-out;
-    display: none;
-    pointer-events: none;
-}
-
-
-.modalDialog > div {
-    position: relative;
-    height: 100%;
-    width: auto;
-
-}
-
-
-
-
-
-/*mycssstart*/
-.image-wrapper{
-    padding: 0px;
-    width: 270px;
-    height: 150px;
-    overflow: hidden;
-}
-
-
-.min-img{
+.photo-preview a{
     display: block;
-    max-width: 100%;
-}
-.open-photo{
-    cursor: pointer;
 }
 
-.max-img{
-    display: block;
-    transition: all 300ms ease-in-out;
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    margin: 1% auto;
-    max-width: 100%;
-    max-height: 90%;
-}
-/*.max-img-wrapper*/
-.close-popup-image{
-    display: none!important;
-    pointer-events: none!important;
-}
-.open-popup-image{
-    display: block!important;
-    pointer-events: auto!important;
+.photo-preview img{
+    max-height: 180px;
 }
 
-/*arrows*/
-.control-arrows{
-    position: absolute;
-    top:40%;
-    left: 20px;
-    cursor: pointer;
-    display: block;
-    color: white;
-    font-size: 70px;
-    -webkit-transition: color 1s ease-out;
-     -moz-transition: color 1s ease-out;
-     -o-transition: color 1s ease-out;
-     transition: color 1s ease-out;
+.mfp-fade.mfp-bg {
+  opacity: 0;
+
+  -webkit-transition: all 0.5s ease-out;
+  -moz-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
+}
+/* overlay animate in */
+.mfp-fade.mfp-bg.mfp-ready {
+  opacity: 0.8;
+}
+/* overlay animate out */
+.mfp-fade.mfp-bg.mfp-removing {
+  opacity: 0;
 }
 
-.control-arrows:hover{
-    color: #00cbc7;
-}
+/* content at start */
+.mfp-fade.mfp-wrap .mfp-content {
+  opacity: 0;
 
-.right-arrow{
-    left: auto;
-    right: 20px;
-}
+  -webkit-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
 
+  -webkit-transition: all 0.15s ease-out;
+  -moz-transition: all 0.15s ease-out;
+  transition: all 0.15s ease-out;
+}
+/* content animate it */
+.mfp-fade.mfp-wrap.mfp-ready .mfp-content {
+  opacity: 1;
 
-/*for the second image*/
-.min-img-wrapper{
-    position: relative;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
 }
-.min-img{
-    opacity: 1;
-    display: block;
-    width: 100%;
-    height: auto;
-    transition: .5s ease;
-    backface-visibility: hidden;
-
-}
-.min-img-layout{
-    transition: .5s ease;
-    opacity: 0;
-    position: absolute;
-    top:40%;
-    left: 44%;
-    transform: translate(-50%;-50%);
-    -ms-transform: translate(-50%;-50%);
-}
-.min-img-wrapper:hover .min-img{
-    opacity: 0.3;
-    transform: scale(1.15,1.15);
-    -webkit-transform:scale(1.15,1.15);
-    -moz-transform:scale(1.15,1.15);
-    -ms-transform:scale(1.15,1.15);
-    -o-transform:scale(1.15,1.15);
-}
-
-.min-img-wrapper:hover .min-img-layout{
-    opacity: 1;
-}
-.loop{
-    background: url('../img/loop.png') center center / cover;
-    height: 45px;
-    width: 45px;
-    z-index: -1;
-    cursor: pointer;
-    
-}
+/* content animate out */
+.mfp-fade.mfp-wrap.mfp-removing .mfp-content {
+  opacity: 0;
+ 5
