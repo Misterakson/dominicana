@@ -1,9 +1,12 @@
 .photo-preview a{
     display: block;
+    padding: 0;
+    max-height: 180px;
 }
 
 .photo-preview img{
-    max-height: 180px;
+    height: 100%;
+    width: 100%;
 }
 
 .mfp-fade.mfp-bg {
@@ -47,4 +50,4 @@
 /* content animate out */
 .mfp-fade.mfp-wrap.mfp-removing .mfp-content {
   opacity: 0;
- 5
+ }

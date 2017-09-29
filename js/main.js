@@ -34,7 +34,7 @@ $(document).ready(function(){
 
 	$('.photo-mix').each(function() { // the containers for all your galleries
     $(this).magnificPopup({
-    	delegate: 'a',
+    	delegate: '.mix:visible',
         type: 'image',
         removeDelay: 300,
 		mainClass: 'mfp-fade',

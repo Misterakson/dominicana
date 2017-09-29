@@ -16,6 +16,9 @@ body{
 .body-wrapper{
 	overflow-x: hidden!important;
 }
+.navbar-default{
+	background-color: inherit;
+}
 
 /*header*/
 
@@ -467,36 +470,23 @@ a.underline-link:focus:after {
 /*about page*/
 
 /*delete after test*/
-.number{
-	width: auto;
-	height: auto;
-	float: left;
-	list-style: none;
+.portfolio-content-wrapper{
+	padding-bottom: 50px;
 }
-.number li{
-	width: auto;
-	height: auto;
-	float: left;
-	padding: 20px 25px;
+.photo-category{
+	list-style: none;
+	font-size: 15px;
+}
+.photo-category li{
+	display: block;
+	padding-bottom: 30px;
 	cursor: pointer;
+	-webkit-transition: color .4s ease-in-out;
+	-o-transition: color .4s ease-in-out;
+	transition: color .4s ease-in-out;
 }
 
-.colors{
-	width: auto;
-	height: auto;
-	float: right;
-	list-style: none;
-}
-.colors li{
-	width: auto;
-	height: auto;
-	float: left;
-	padding: 20px 25px;
-cursor: pointer;
-}
-.photo-wrapper{
-	height: 500px;
-}
-.photo-wrapper img{
-	width: 100%;
+.photo-category li:hover{
+	color: #00dde9;
+
 }
