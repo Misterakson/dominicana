@@ -465,3 +465,38 @@ a.underline-link:focus:after {
 }
 
 /*about page*/
+
+/*delete after test*/
+.number{
+	width: auto;
+	height: auto;
+	float: left;
+	list-style: none;
+}
+.number li{
+	width: auto;
+	height: auto;
+	float: left;
+	padding: 20px 25px;
+	cursor: pointer;
+}
+
+.colors{
+	width: auto;
+	height: auto;
+	float: right;
+	list-style: none;
+}
+.colors li{
+	width: auto;
+	height: auto;
+	float: left;
+	padding: 20px 25px;
+cursor: pointer;
+}
+.photo-wrapper{
+	height: 500px;
+}
+.photo-wrapper img{
+	width: 100%;
+}

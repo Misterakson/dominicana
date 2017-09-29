@@ -32,5 +32,35 @@ $(document).ready(function(){
     });
 });
 
+	$('.photo-mix').each(function() { // the containers for all your galleries
+    $(this).magnificPopup({
+    	delegate: 'a',
+        type: 'image',
+        removeDelay: 300,
+		mainClass: 'mfp-fade',
+        gallery: {
+          enabled:true
+        }
+    });
+});
+
 // magnific popup
+
+// mixitup
+var mixer = mixitup('.photo-mix');
+var mixer = mixitup(containerEl);
+
+var mixer = mixitup(containerEl, {
+	selectors:{
+		target: '.blog-item'
+	},
+	 "animation": {
+        "duration": 250,
+        "nudge": true,
+        "reverseOut": false,
+        "effects": "fade scale(0.01) translateZ(-100px)"
+    }
+})
+
+// mixitup
 });
