@@ -488,5 +488,11 @@ a.underline-link:focus:after {
 
 .photo-category li:hover{
 	color: #00dde9;
+}
 
+.photo-mix{
+	height: 720px;
+}
+.portfolio-gallery-wrapper{
+	text-align: center;
 }
