@@ -532,3 +532,37 @@ a.underline-link:focus:after {
 #reviews-page{
 	padding-bottom: 50px;
 }
+
+
+/*services photo page*/
+.service-photo-wrapper img{
+	width: 100%;
+}
+.service-photo-wrapper{
+	float: left;
+}
+.service-description-wrapper{
+	position: relative;
+	right: 0;
+	left: 40%;
+	border: 1px solid black;
+	padding: 90px 30px;
+	margin-top: 70px;
+	width:58.33333333%;
+	z-index: -1;
+	height: 420px;
+}
+
+.service-description {
+	position: absolute;
+    width: 70%;
+    left: 20%;
+}
+
+.service-description-wrapper .wrapper-inner-tab-backgrounds-second{
+	position: absolute;
+    width: 250px;
+    bottom: 110px;
+    font-family: 'Century Gothic';
+    left: 14%;
+}
