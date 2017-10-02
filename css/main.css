@@ -469,7 +469,7 @@ a.underline-link:focus:after {
 
 /*about page*/
 
-/*delete after test*/
+/*portfolio page*/
 .portfolio-content-wrapper{
 	padding-bottom: 50px;
 }
@@ -495,4 +495,40 @@ a.underline-link:focus:after {
 }
 .portfolio-gallery-wrapper{
 	text-align: center;
+}
+
+
+/*review page*/
+.review-photo{
+	max-height: 300px;
+	max-width: 100%;
+}
+
+.one-review{
+	padding-bottom: 50px;
+}
+
+.quotes{
+	font-family: 'Century Gothic';
+	font-size: 90px;
+	color: #00bbc5;
+	font-weight: bold;
+	height: 40px;		
+}
+.review-body{
+	padding-left: 50px;
+}
+.reviews-title{
+	font-family: 'Century Gothic';
+	line-height: 23px;
+	letter-spacing: 3px;
+	font-size: 15px;
+	color: #00bbc5;
+	text-transform: uppercase;
+}
+.pagination-wrapper{
+	text-align: center;
+}
+#reviews-page{
+	padding-bottom: 50px;
 }
