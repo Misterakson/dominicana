@@ -571,6 +571,7 @@ a.underline-link:focus:after {
 
 .breadcrumb{
 	background-color: inherit;
+	padding-left: 0;
 }
 .breadcrumb .active{
 	color: inherit;
@@ -623,5 +624,13 @@ a.underline-link:focus:after {
 	padding-top: 20px;
 }
 .service-wrapper{
+	padding-bottom: 70px;
+}
+
+/*photosessions-inside*/
+.photosession-inside-wrapper h3{
+	margin-top: 0;
+}
+#photosessions-inside{
 	padding-bottom: 70px;
 }

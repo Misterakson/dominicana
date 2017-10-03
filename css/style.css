@@ -1,12 +1,13 @@
 .photo-preview a{
     display: block;
     padding: 0;
-    max-height: 180px;
+    height: 180px;
 }
 
 .photo-preview img{
+    
     height: 100%;
-    width: 100%;
+    width: auto;
 }
 
 .mfp-fade.mfp-bg {
