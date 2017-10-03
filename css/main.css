@@ -627,10 +627,21 @@ a.underline-link:focus:after {
 	padding-bottom: 70px;
 }
 
-/*photosessions-inside*/
+/*photosessions-inside page*/
 .photosession-inside-wrapper h3{
 	margin-top: 0;
 }
 #photosessions-inside{
 	padding-bottom: 70px;
+}
+/*photosessions-inside page*/
+
+
+/*services wedding page*/
+#services-wedding-page .service-description-wrapper{
+		padding: 40px;
+}
+
+#services-wedding-page .service-description-wrapper .wrapper-inner-tab-backgrounds-second{
+	bottom: 35px;
 }
