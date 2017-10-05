@@ -1,5 +1,62 @@
 $(document).ready(function(){
 
+
+// owl-carousel
+
+    owl = $(".owl-carousel");
+    prev = $('#left');
+    next = $('#right');
+    $(".owl-carousel").owlCarousel({
+        loop: true,
+        center: true,
+        items: 1,
+        stagePadding: 250,
+        // autoplay: true,
+        // autoplayTimeout: 3500,
+    });
+    next.on("click", ()=>{
+    owl.trigger("next.owl.carousel");
+  });
+  prev.on("click", ()=>{
+    owl.trigger("prev.owl.carousel");
+  })
+// owl-carousel
+
+//calculate
+    sum = 0;
+    orders = {};
+    services = '';
+$('.additional-services-form input[type=checkbox]').click(function(){
+    var price = $(this).attr('data-price');
+    var checked = $(this).prop('checked');
+    var id = $(this).attr('id');
+    if(checked == true){
+        sum += parseFloat(price);
+        orders[$(this).attr('id')] = $('#'+id).next().html();
+    } else if(checked == false) {
+        sum -= parseFloat(price);
+        delete orders[$(this).attr('id')];
+        
+    }
+        
+        // for (var key in orders){
+        //     alert(key + " : " + orders[key]);
+        // }
+
+
+});
+
+$('.order-form-open').click(function(){
+        
+        for (var serviceId in orders){
+            services += orders[serviceId] + ", ";
+        }
+        $('#result-price').html(sum);
+        $('#result-services').html(services);
+});
+
+//calculate
+
 // accotdion
 	$('.question_title').click(function(){
 
@@ -21,46 +78,52 @@ $(document).ready(function(){
 
 // magnific popup
 	$('.photo-preview-wrapper').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-    	delegate: 'a',
-        type: 'image',
-        removeDelay: 300,
-		mainClass: 'mfp-fade',
-        gallery: {
-          enabled:true
-        }
+        $(this).magnificPopup({
+    	   delegate: 'a',
+            type: 'image',
+            removeDelay: 300,
+		    mainClass: 'mfp-fade',
+            gallery: {
+            enabled:true
+            }
+        });
     });
-});
 
 	$('.photo-mix').each(function() { // the containers for all your galleries
-    $(this).magnificPopup({
-    	delegate: '.mix:visible',
-        type: 'image',
-        removeDelay: 300,
-		mainClass: 'mfp-fade',
-        gallery: {
-          enabled:true
-        }
+        $(this).magnificPopup({
+    	   delegate: '.mix:visible',
+            type: 'image',
+            removeDelay: 300,
+		  mainClass: 'mfp-fade',
+            gallery: {
+            enabled:true
+            }
+        });
     });
-});
+
+    $('.order-form-open').magnificPopup();
 
 // magnific popup
 
 // mixitup
-var mixer = mixitup('.photo-mix');
-var mixer = mixitup(containerEl);
+    var mixer = mixitup('.photo-mix');
+    var mixer = mixitup(containerEl);
 
-var mixer = mixitup(containerEl, {
-	selectors:{
-		target: '.blog-item'
-	},
-	 "animation": {
-        "duration": 250,
-        "nudge": true,
-        "reverseOut": false,
-        "effects": "fade scale(0.01) translateZ(-100px)"
-    }
-})
+    var mixer = mixitup(containerEl, {
+	   selectors:{
+		  target: '.blog-item'
+	   },
+	   "animation": {
+         "duration": 250,
+            "nudge": true,
+            "reverseOut": false,
+            "effects": "fade scale(0.01) translateZ(-100px)"
+        }
+    });
 
 // mixitup
-});
+
+
+
+
+    }); 

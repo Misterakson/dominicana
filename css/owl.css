@@ -1,0 +1,74 @@
+.carousel-wrapper{
+	position: relative;
+	padding-bottom: 30px;
+}
+.owl-stage{
+	height: 400px;
+}
+.owl-item{
+	opacity: 0.5;
+	-webkit-transition: opacity 1s ease;
+	-o-transition: opacity 1s ease;
+	transition: opacity 1s ease;
+	height: 100%;
+	-webkit-transform: scaleY(0.8)!important;
+	-ms-transform: scaleY(0.8)!important;
+	-o-transform: scaleY(0.8)!important;
+	transform: scaleY(0.8)!important;
+	-webkit-transition: all 260ms ease!important;
+	-o-transition: all 260ms ease!important;
+	transition: all 260ms ease!important;
+}
+
+.owl-stage .active{
+	padding: none;
+	opacity: 1;
+	-webkit-transform: scaleY(1)!important;
+	-ms-transform: scaleY(1)!important;
+	-o-transform: scaleY(1)!important;
+	transform: scaleY(1)!important;
+}
+.image-div{
+	height: 100%;
+	background: center center / cover;
+	content: " ";
+}
+.controls{
+	position: absolute;
+      width: 100%;
+      top: 50%;
+      height: auto;
+      pointer-events: none;
+      z-index: 2;
+}
+
+.controls .arrow{
+	position: absolute;
+        -webkit-transform: translateY(-50%) scale(1);
+        -ms-transform: translateY(-50%) scale(1);
+        transform: translateY(-50%) scale(1);
+        -webkit-transition: -webkit-transform 0.1s ease-out;
+        transition: -webkit-transform 0.1s ease-out;
+        -o-transition: transform 0.1s ease-out;
+        transition: transform 0.1s ease-out;
+        transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
+        cursor: pointer;
+}
+.controls .arrow:hover{
+	 -webkit-transform: translateY(-50%) scale(1.1);
+          -ms-transform: translateY(-50%) scale(1.1);
+          transform: translateY(-50%) scale(1.1); 
+}
+.controls .arrow:active {
+          -webkit-transform: translateY(-50%) scale(1);
+          -ms-transform: translateY(-50%) scale(1);
+          transform: translateY(-50%) scale(1); 
+}
+.controls .arrow#left {
+          left: 100px;
+          pointer-events: auto; 
+}
+.controls .arrow#right {
+          right: 100px;
+          pointer-events: auto; 
+}

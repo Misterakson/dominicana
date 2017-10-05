@@ -645,3 +645,90 @@ a.underline-link:focus:after {
 #services-wedding-page .service-description-wrapper .wrapper-inner-tab-backgrounds-second{
 	bottom: 35px;
 }
+/*services wedding page*/
+
+.services-inside-wrapper h3{
+	padding-bottom: 30px;
+	font-family: 'Century Gothic';
+}
+
+/*service inside*/
+#services-inside-page{
+	font-size: 17px;
+	padding-bottom: 70px;
+}
+
+.additional-services-form{
+	display: inline-block;
+}
+.additional-services-form label{
+	display: block;
+	font-weight: normal;
+}
+.additional-services-form input[type=checkbox]{
+	display: none;
+}
+.additional-services-form [type="checkbox"] + label{
+  	cursor: pointer;
+  	height: 20px;
+    margin-bottom: 8px
+}
+
+.additional-services-form input[type="checkbox"] + label::before{
+	content: "";
+    display: inline-block;
+    height: 18px;
+    width: 18px;
+    margin: 5px 20px 0 0;
+    border: 1px solid black;
+    background: #fff;
+}
+
+.additional-services-form input[type="checkbox"]:checked + label::before {
+    background: url(../img/check-mark.png) center center / cover;
+}
+
+#services-inside-page .wrapper-inner-tab-backgrounds-second{
+	width: 75%;
+}
+
+/*order-form*/
+.hidden-form-wrapper{
+	display: none;
+}
+
+.popup-form-wrapper{
+	background: white;
+    height: 480px;
+    width: 460px;
+    position: relative;
+    margin: auto;
+    border: 1px solid #00bcbe;
+    padding: 50px;
+}
+.popup-form-wrapper h4{
+	font-family: 'Century Gothic';
+	font-size: 20px;
+	color: #9d9d9d;
+}
+.popup-form-wrapper p{
+	font-size: 13px;
+}
+.popup-form-wrapper .popup-total-price{
+	font-size: 15px;
+	font-family: 'Century Gothic';
+}
+
+.popup-form-wrapper input{
+	display: block;
+	width: 100%;
+	height: 45px;
+	border: 1px solid black;
+	padding-left: 13px;
+}
+.popup-form-wrapper .wrapper-inner-tab-backgrounds-second{
+	margin: auto;
+	width: 80%;
+}
+
+/*service inside*/
