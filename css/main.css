@@ -732,3 +732,38 @@ a.underline-link:focus:after {
 }
 
 /*service inside*/
+
+/*service main page*/
+#services-page{
+	padding-bottom: 70px;
+}
+
+#services-page .service-photosession{
+	height: 70vh;
+}
+.service-photosession{
+	padding: 0;
+}
+.services-button-wrapper{
+	position: relative;
+    height: 100%;
+    width: 100%;
+    background: rgba(255,255,255,0.6);
+
+}
+.services-button-wrapper .wrapper-inner-tab-backgrounds-second{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    -ms-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+    width: 50%;
+    height: 90px;
+}
+
+.service-button-wrapper .sim-button{
+	margin: 0;
+}
+
+/*service main page*/
