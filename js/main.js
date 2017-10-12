@@ -1,12 +1,35 @@
 $(document).ready(function(){
 
+    // owl-carousel main page
 
-// owl-carousel
+    $('.carousel_2').owlCarousel({
+        loop: true,
+        items: 1,
+        dots: true
+    })
 
-    owl = $(".owl-carousel");
+    // owl-carousel main page
+
+    // spincrement main page
+    $(window).scroll(function () { // Когда страница прокручивается
+        var scrTop = $(window).scrollTop();
+        if(scrTop>$('#main-page-numbers').offset().top - $(window).height()  ) {
+            $(".spincrement").spincrement({
+                duration: 3500,
+            });
+            $('#main-page-numbers h3').removeClass('spincrement');
+
+        }
+   });
+    
+    // spincrement main page
+
+// owl-carousel service page
+
+    owl = $(".carousel_1");
     prev = $('#left');
     next = $('#right');
-    $(".owl-carousel").owlCarousel({
+    $(".carousel_1").owlCarousel({
         loop: true,
         center: true,
         items: 1,
@@ -20,7 +43,7 @@ $(document).ready(function(){
   prev.on("click", ()=>{
     owl.trigger("prev.owl.carousel");
   })
-// owl-carousel
+// owl-carousel service page
 
 //calculate
     sum = 0;

@@ -1,11 +1,11 @@
-.carousel-wrapper{
+#services-inside-page .carousel-wrapper{
 	position: relative;
 	padding-bottom: 30px;
 }
-.owl-stage{
+#services-inside-page .owl-stage{
 	height: 400px;
 }
-.owl-item{
+#services-inside-page .owl-item{
 	opacity: 0.5;
 	-webkit-transition: opacity 1s ease;
 	-o-transition: opacity 1s ease;
@@ -20,7 +20,7 @@
 	transition: all 260ms ease!important;
 }
 
-.owl-stage .active{
+#services-inside-page .owl-stage .active{
 	padding: none;
 	opacity: 1;
 	-webkit-transform: scaleY(1)!important;
@@ -28,12 +28,12 @@
 	-o-transform: scaleY(1)!important;
 	transform: scaleY(1)!important;
 }
-.image-div{
+#services-inside-page .image-div{
 	height: 100%;
 	background: center center / cover;
 	content: " ";
 }
-.controls{
+#services-inside-page .controls{
 	position: absolute;
       width: 100%;
       top: 50%;
@@ -42,7 +42,7 @@
       z-index: 2;
 }
 
-.controls .arrow{
+#services-inside-page .controls .arrow{
 	position: absolute;
         -webkit-transform: translateY(-50%) scale(1);
         -ms-transform: translateY(-50%) scale(1);
@@ -54,21 +54,21 @@
         transition: transform 0.1s ease-out, -webkit-transform 0.1s ease-out;
         cursor: pointer;
 }
-.controls .arrow:hover{
+#services-inside-page .controls .arrow:hover{
 	 -webkit-transform: translateY(-50%) scale(1.1);
           -ms-transform: translateY(-50%) scale(1.1);
           transform: translateY(-50%) scale(1.1); 
 }
-.controls .arrow:active {
+#services-inside-page .controls .arrow:active {
           -webkit-transform: translateY(-50%) scale(1);
           -ms-transform: translateY(-50%) scale(1);
           transform: translateY(-50%) scale(1); 
 }
-.controls .arrow#left {
+#services-inside-page .controls .arrow#left {
           left: 100px;
           pointer-events: auto; 
 }
-.controls .arrow#right {
+#services-inside-page .controls .arrow#right {
           right: 100px;
           pointer-events: auto; 
 }

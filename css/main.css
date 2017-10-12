@@ -744,14 +744,15 @@ a.underline-link:focus:after {
 .service-photosession{
 	padding: 0;
 }
-.services-button-wrapper{
+
+#services-page .services-button-wrapper{
 	position: relative;
     height: 100%;
     width: 100%;
     background: rgba(255,255,255,0.6);
 
 }
-.services-button-wrapper .wrapper-inner-tab-backgrounds-second{
+#services-page .services-button-wrapper .wrapper-inner-tab-backgrounds-second{
     position: absolute;
     top: 50%;
     left: 50%;
@@ -762,8 +763,270 @@ a.underline-link:focus:after {
     height: 90px;
 }
 
-.service-button-wrapper .sim-button{
+#services-page .service-button-wrapper .sim-button{
 	margin: 0;
 }
 
 /*service main page*/
+
+/*index page*/
+
+/*first section*/
+#main-page-header{
+	position: relative;
+	height: 700px;
+}
+#main-page-header nav{
+	position: absolute;
+	z-index: 999;
+}
+#main-page-header .main-photo{
+	position: absolute;
+	right: 0;
+	width:66.66666667%;
+	height: 100%;
+	background:url('../img/main_img.png') center center / cover;
+
+}
+#main-page-header .logo-container{
+	position: absolute;
+	height: 350px;
+	width:58.33333333%;
+	left: 30px;
+	/*background: url('../img/logo.png') center center / contain;*/
+	top: 50%; 
+	-webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+    border-bottom: 1px solid black;
+    border-left: 1px solid black;
+    padding-bottom: 20px;
+    text-align: center;
+    line-height: 350px;
+}
+.logo-container img{
+	height: 80%;
+	margin: 0 auto;
+	/*display: block;*/
+}
+.half-border-top{
+	position: absolute;
+	height: 100%;
+	width: 50%;
+	border-top: 1px solid black;
+}
+/*FIRST SECTION*/
+
+/*second section*/
+
+#main-page-services{
+	position: relative;
+	padding-top: 70px;
+
+}
+#main-page-services .row{
+	height: 640px;
+	padding-bottom: 70px;
+}
+.main-service-first{
+	background: url('../img/main_service_1.png') center center / cover;
+	max-height: 100%;
+	height: 100%;
+}
+
+.main-service-description{
+	position: relative;
+	height: 100%;
+	text-align: center;
+}
+.main-service-description h3{
+	font-family: 'Century Gothic';
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	margin: 0;
+	font-size: 20px;
+}
+.main-service-description p{
+	padding-top: 30px;
+}
+
+.main-service-description-wrapper{
+	position: absolute;
+	padding-left: 40px;
+	padding-right: 40px;
+	width: 90%;
+	top: 50%; 
+	-webkit-transform:translateY(-50%);
+    -ms-transform:translateY(-50%);
+    transform:translateY(-50%);
+}
+
+.main-service-second{
+	background: url('../img/service-photosession.png') center center / cover;
+	max-height: 100%;
+	height: 100%;
+}
+
+/*second section*/
+
+
+/*third section*/
+#main-page-porfolio{
+	padding-bottom: 70px;
+}
+#main-page-porfolio .img-container{
+	height: 100%;
+}
+#main-page-porfolio .photo-mix{
+	height: auto;
+}
+#main-page-porfolio .photo-mix .min-photo{
+	display: block;
+	height: 290px;
+}
+#main-page-porfolio .photo-mix .min-photo:before{
+	content: '';
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../img/loop.png) center center;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+#main-page-porfolio .photo-mix .min-photo:hover:before{
+	opacity: 1;
+	 -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+	background-color: rgba(255,255,255,0.6);
+
+}
+
+/*#main-page-porfolio .photo-mix .min-photo:hover{
+	opacity: 0.5;
+}*/
+
+
+#main-page-porfolio .services-button-wrapper{
+	height: 290px;
+	line-height: 320px;
+}
+
+#main-page-porfolio .services-button-wrapper .wrapper-inner-tab-backgrounds-second{
+	display: inline-block;	
+	font-size: 20px;
+	font-family: 'Century Gothic';
+	letter-spacing: 3px;
+	text-transform: uppercase;
+}
+#main-page-porfolio .button29{
+	width: 300px;
+}
+
+/*thrid section*/
+
+
+/*fourth section*/
+#main-page-numbers{
+	padding-bottom: 70px;
+}
+#main-page-numbers .big-number-wrapper{
+	text-align: center;
+	font-family: 'Century Gothic';
+	color: #00b9c3;
+}
+#main-page-numbers .big-number-wrapper .big-number{
+	font-size: 131px;
+}
+#main-page-numbers .big-number-wrapper .number-description{
+	font-size: 20px;
+}
+/*fourth section*/
+
+
+
+/*fifth section*/
+#main-page-about{
+	padding-bottom: 70px;
+}
+.main-page-about-wrapper{
+	position: relative;
+	height: 600px;
+}
+.main-page-about-wrapper .lera-photo{
+	position: absolute;
+	z-index: 1;
+	width:58.33333333%;
+	height:80%;
+}
+.main-page-about-wrapper .lera-photo img{
+	height: 500px;
+}
+.main-page-about-wrapper .about-description-wrapper{
+	position: absolute;
+	right: 7%;
+	top: 150px;
+	height: 440px;
+	width: 50%;
+	border: 1px solid #00b9c3;
+	padding: 60px;
+	padding-left: 200px;
+	z-index: 0;
+	line-height: 34px;
+	text-align: left;
+}
+.main-page-about-wrapper .about-description-wrapper p{
+	width: 80%;
+}
+
+
+/*fifth section*/
+
+
+
+/*sixth section*/
+#main-page-reviews{
+	padding-bottom: 70px;
+}
+#main-page-reviews .slide-wrapper{
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-color: #ede6ec;
+}
+
+#main-page-reviews .slide-review{
+
+	line-height: 30px;
+}
+
+#main-page-reviews img{
+	max-height: 200px;
+	max-width: 200px;
+}
+
+#main-page-reviews .owl-dots {
+    display: block;
+    margin-top: 15px;
+    text-align: center;
+}
+#main-page-reviews .owl-dot {
+    background: none repeat scroll 0 0 #869791;
+    border-radius: 20px;
+    height: 12px;
+    margin: 5px 7px;
+    opacity: 0.5;
+    width: 12px;
+    display: inline-block;
+}
+#main-page-reviews .active{
+	background: #00b9c3;
+}
+/*sixth section*/
+
+
+/*index page*/

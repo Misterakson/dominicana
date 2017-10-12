@@ -1,4 +1,4 @@
-.photo-preview a{
+.photo-preview .photo-mix > a{
     display: block;
     padding: 0;
     height: 180px;
