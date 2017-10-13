@@ -77,6 +77,25 @@ footer h6{
 	/*review page*/
 }
 
+@media screen and (max-width: 576px){
+	/*portfolio*/
+	.portfolio-gallery-wrapper{
+		margin-top: 30px;
+	}
+	.photo-category{
+		display: inline-block;
+	}
+	.photo-category li{
+		display: inline-block;
+	}
+	.photo-category li:after{
+		content: ' |'
+	}
+	.photo-category li:last-child:after{
+		content: '';
+	}
+	/*portfolio*/
+}
 
 
 

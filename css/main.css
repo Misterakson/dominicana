@@ -386,6 +386,7 @@ a.underline-link:focus:after {
 .pagination {
 	margin: 0 auto;
     display: inline-block;
+    padding-top: 30px;
 }
 
 .pagination a {
