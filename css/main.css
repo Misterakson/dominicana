@@ -10,8 +10,7 @@
 
 body{
 	font-family: 'Open Sans', sans-serif;
-	/*font-family: 'Century Gothic';*/
-	font-family: 'Arial', sans-serif;
+	color: #2d2d2d;
 }
 .body-wrapper{
 	overflow-x: hidden!important;
@@ -19,6 +18,46 @@ body{
 .navbar-default{
 	background-color: inherit;
 }
+.navbar-default .navbar-nav>li>a{
+	color: #2d2d2d;
+}
+
+
+/*magnific gallery css*/
+.photo-mix{
+	height: auto;
+}
+.min-photo{
+	display: block;
+	height: 290px;
+}
+.min-photo:before{
+	content: '';
+	opacity: 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	background: url(../img/loop.png) center center;
+    background-repeat: no-repeat;
+    -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+}
+.min-photo:hover:before{
+	opacity: 1;
+	 -webkit-transition: opacity 0.8s;
+    -o-transition: opacity 0.8s;
+    transition: opacity 0.8s;
+	background-color: rgba(255,255,255,0.6);
+
+}
+.img-container{
+	height: 100%;
+}
+/*magnific gallery css*/
+
 
 /*header*/
 
@@ -65,7 +104,7 @@ a.menu-underline:focus:after {
 
 
 header .page_title{
-	font-size: 30px;
+	font-size: 25px;
 	font-family: 'Century Gothic';
 	font-weight: lighter;
 	padding-bottom: 30px;
@@ -237,7 +276,9 @@ footer h6{
 	margin-bottom: 6px;
 }
 
-
+#photosessions .min-photo{
+	height: 180px;
+} 
 
 a.underline-link{
 	display: inline-block;
@@ -277,8 +318,7 @@ a.underline-link:focus:after {
 }
 
 /*button css*/
-.wrapper-inner-tab-backgrounds-second{
-}
+
 .sim-button{
 	line-height: 50px;
 	height: 50px;
@@ -383,6 +423,10 @@ a.underline-link:focus:after {
 	font-size: 15px;
 	font-family: 'Century Gothic';
 	letter-spacing: 5px;
+}
+.list-contact-head .fa{
+	position: relative;
+	left: 2px;
 }
 
 
@@ -490,8 +534,11 @@ a.underline-link:focus:after {
 	color: #00dde9;
 }
 
-.photo-mix{
+#portfolio-page .photo-mix{
 	height: 720px;
+}
+#portfolio-page .min-photo{
+	height: 180px;
 }
 .portfolio-gallery-wrapper{
 	text-align: center;
@@ -502,6 +549,9 @@ a.underline-link:focus:after {
 .review-photo{
 	max-height: 300px;
 	max-width: 100%;
+}
+.review-photo-wrapper{
+	text-align: center;
 }
 
 .one-review{
@@ -526,6 +576,7 @@ a.underline-link:focus:after {
 	color: #00bbc5;
 	text-transform: uppercase;
 }
+
 .pagination-wrapper{
 	text-align: center;
 }
@@ -634,6 +685,9 @@ a.underline-link:focus:after {
 #photosessions-inside{
 	padding-bottom: 70px;
 }
+#photosessions-inside .min-photo{
+	height: 180px;
+}
 /*photosessions-inside page*/
 
 
@@ -648,8 +702,9 @@ a.underline-link:focus:after {
 /*services wedding page*/
 
 .services-inside-wrapper h3{
-	padding-bottom: 30px;
+	padding-bottom: 20px;
 	font-family: 'Century Gothic';
+	font-size: 30px;
 }
 
 /*service inside*/
@@ -874,42 +929,6 @@ a.underline-link:focus:after {
 #main-page-porfolio{
 	padding-bottom: 70px;
 }
-#main-page-porfolio .img-container{
-	height: 100%;
-}
-#main-page-porfolio .photo-mix{
-	height: auto;
-}
-#main-page-porfolio .photo-mix .min-photo{
-	display: block;
-	height: 290px;
-}
-#main-page-porfolio .photo-mix .min-photo:before{
-	content: '';
-	opacity: 0;
-	position: absolute;
-	top: 0;
-	left: 0;
-	height: 100%;
-	width: 100%;
-	background: url(../img/loop.png) center center;
-    background-repeat: no-repeat;
-    -webkit-transition: opacity 0.8s;
-    -o-transition: opacity 0.8s;
-    transition: opacity 0.8s;
-}
-#main-page-porfolio .photo-mix .min-photo:hover:before{
-	opacity: 1;
-	 -webkit-transition: opacity 0.8s;
-    -o-transition: opacity 0.8s;
-    transition: opacity 0.8s;
-	background-color: rgba(255,255,255,0.6);
-
-}
-
-/*#main-page-porfolio .photo-mix .min-photo:hover{
-	opacity: 0.5;
-}*/
 
 
 #main-page-porfolio .services-button-wrapper{
@@ -1030,3 +1049,5 @@ a.underline-link:focus:after {
 
 
 /*index page*/
+
+

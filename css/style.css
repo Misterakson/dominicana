@@ -1,13 +1,6 @@
 .photo-preview .photo-mix > a{
     display: block;
     padding: 0;
-    height: 180px;
-}
-
-.photo-preview img{
-    
-    height: 100%;
-    width: auto;
 }
 
 .mfp-fade.mfp-bg {

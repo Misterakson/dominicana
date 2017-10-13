@@ -1,0 +1,94 @@
+@media screen and (max-width: 992px){
+
+/*reviews*/
+
+/*reviews*/
+
+}
+
+
+
+@media screen and (max-width: 768px){
+
+/*header*/
+
+.navbar-brand{
+	display: none;
+}
+.navbar-toggle{
+	float: left;
+	border: none;
+	border-radius: 0px;
+}
+.navbar-default .navbar-toggle .icon-bar{
+	background-color: #00bcbe;
+}
+
+
+
+/*header*/
+
+/*footer*/
+
+#footer_navbar{
+	letter-spacing: 1px;
+}
+#footer_contacts{
+	letter-spacing: 1px;
+}
+
+footer h6{
+	letter-spacing: 1px;
+}
+
+/*footer*/
+
+
+/*contact page*/
+.page_title{
+	text-align: center;
+}
+
+.lera-photo-wrapper{
+	display: none;
+}
+.list-contact-head{
+	margin: 0;
+	padding: 0;
+}
+
+/*contact page*/
+
+
+}
+
+
+
+@media screen and (max-width: 600px){
+	/*review page*/
+
+		#reviews-page .quotes{
+			display: none;
+		}
+		#reviews-page .review-body{
+			padding: 0;
+		}
+
+	/*review page*/
+}
+
+
+
+
+@media screen and (max-width: 450px){
+	/*footer*/
+	
+	/*footer*/
+
+
+	/*contact page*/
+	.contact-form-wrapper{
+		width: 100%;
+	}
+	/*contact page*/
+}
