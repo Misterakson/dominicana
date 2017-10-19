@@ -973,25 +973,24 @@ a.underline-link:focus:after {
 /*fifth section*/
 #main-page-about{
 	padding-bottom: 70px;
+	display: inline-block;
 }
 .main-page-about-wrapper{
 	position: relative;
-	height: 600px;
 }
 .main-page-about-wrapper .lera-photo{
 	position: absolute;
 	z-index: 1;
 	width:58.33333333%;
-	height:80%;
+	height:500px;
 }
 .main-page-about-wrapper .lera-photo img{
 	height: 500px;
 }
 .main-page-about-wrapper .about-description-wrapper{
-	position: absolute;
-	right: 7%;
+	display: inline-block;
+	position: relative;
 	top: 150px;
-	height: 440px;
 	width: 50%;
 	border: 1px solid #00b9c3;
 	padding: 60px;
@@ -1011,6 +1010,7 @@ a.underline-link:focus:after {
 
 /*sixth section*/
 #main-page-reviews{
+	padding-top: 90px;
 	padding-bottom: 70px;
 }
 #main-page-reviews .slide-wrapper{

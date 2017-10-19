@@ -1,8 +1,71 @@
+@media screen and (min-width: 2200px){
+	/*main page services*/
+	.main-page-about-wrapper .about-description-wrapper p{
+		width: 70%;
+	}
+	/*main page services*/
+}
+
+
 @media screen and (max-width: 992px){
 
+	/*footer*/
+	footer #logo{
+		display: none;
+	}
+	/*footer*/
+
 /*reviews*/
 
 /*reviews*/
+
+/*services photo*/
+
+.service-description{
+	right: 40px;
+	width: 40%;
+	left: auto;
+}
+.service-description-wrapper{
+	right: 0;
+	padding-top: 50px;
+	width: auto;
+	text-align: left;
+	left: auto;
+}
+.service-description-wrapper .wrapper-inner-tab-backgrounds-second{
+	bottom: 50px;
+	right: 30px;
+	left: auto;
+}
+
+
+/*services photo*/
+
+
+/*about main page block*/
+.about-description-wrapper{
+	padding-left: 110px!important;
+	padding-right: 10px!important;
+
+}
+/*about main page block*/
+
+/*portfolio main page*/
+#main-page-porfolio .button29{
+	width: 100%;
+}
+/*portfolio main page*/
+
+/*reviews main page */
+.quotes-wrapper{
+	display: none;
+}
+#main-page-reviews .slide-wrapper{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+/*reviews main page*/
 
 }
 
@@ -28,10 +91,70 @@
 
 /*header*/
 
+
+/*header main-page*/
+
+#main-page-header .navbar-toggle{
+	margin-top: 20px;
+	margin-left: 30px;
+}
+#main-page-header .navbar-toggle:hover{
+	background-color: gainsboro;
+}
+
+#main-page-header .main-photo{
+	width: 100%;
+	position: relative;
+}
+
+#main-page-header .navbar-collapse {
+	background: white;
+}
+#main-page-header .logo-container img{
+	width: 100%;
+	height: auto;
+}
+#main-page-header .logo-container{
+	left: 10px;
+	width: 100%;
+}
+
+/*header main-page*/
+
+/*about main page*/
+
+#main-page-about{
+	padding-bottom: 0;
+}
+
+#main-page-about .lera-photo{
+	position: relative;
+	width: 85%;
+	height: 70vh;
+	z-index: 20;
+}
+#main-page-about .about-description-wrapper{
+	width: 80%;
+	top: -30px;
+	text-align: left;
+	padding-left: 0!important;
+	padding-top: 40px;
+	z-index: 10;
+	float: right;
+}
+#main-page-about .about-description-wrapper .about-description{
+	float: none!important;
+	margin: 0 auto;
+}
+
+/*about main page*/
+
+
+
 /*footer*/
 
-#footer_navbar{
-	letter-spacing: 1px;
+footer .footer_navbar_wrapper{
+	display: none;
 }
 #footer_contacts{
 	letter-spacing: 1px;
@@ -62,7 +185,13 @@ footer h6{
 
 }
 
-
+@media screen and (max-width: 768px) and (min-width: 600px){
+	/*service-photo page*/
+	.service-photo-wrapper{
+		width: 50%;
+	}
+	/*service-photo page*/
+}
 
 @media screen and (max-width: 600px){
 	/*review page*/
@@ -75,6 +204,45 @@ footer h6{
 		}
 
 	/*review page*/
+
+
+	/*service-photo page*/
+
+	.service-number{
+		display: none;
+	}
+	.service-photo-icon{
+		height: auto;
+	}
+	.service-description-wrapper{
+		height: 700px;
+	}
+	.service-description{
+		bottom: 110px;
+		right: auto;
+		width: auto;
+	}
+	.details-description{
+		width: 50%;
+	}
+	.service-photo-icon{
+		font-size: 12px;
+	}
+
+	/*service-photo page*/
+
+	/*portfolio main page*/
+	#main-page-porfolio .min-photo{
+		height: 180px;
+	}
+	#main-page-porfolio .services-button-wrapper{
+		height: 180px;
+	}
+	#main-page-porfolio .services-button-wrapper{
+		line-height: 220px;
+	}
+	/*portfolio main page*/
+
 }
 
 @media screen and (max-width: 576px){

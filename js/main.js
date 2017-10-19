@@ -47,16 +47,16 @@ $(document).ready(function(){
             items:5,
             nav:true,
             loop:false
-        }
-        // autoplay: true,
-        // autoplayTimeout: 3500,
+        },
+    }
     });
+
     next.on("click", ()=>{
-    owl.trigger("next.owl.carousel");
-  });
-  prev.on("click", ()=>{
-    owl.trigger("prev.owl.carousel");
-  })
+        owl.trigger("next.owl.carousel");
+    });
+    prev.on("click", ()=>{
+        owl.trigger("prev.owl.carousel");
+    });
 // owl-carousel service page
 
 
