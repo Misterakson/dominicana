@@ -7,7 +7,20 @@
 }
 
 
+
 @media screen and (max-width: 992px){
+
+	/*header-main-page*/
+	.lang-sep-wrapper{
+		position: relative;
+		background: gainsboro;
+		top: 45px;
+	}
+	#inside-page .lang-sep-wrapper{
+		top: 0;
+	}
+
+	/*header-main-page*/
 
 	/*footer*/
 	footer #logo{
@@ -67,6 +80,29 @@
 }
 /*reviews main page*/
 
+
+/*service-inside;*/
+#services-inside-page .controls .arrow#left {
+          left: 20px;
+}
+#services-inside-page .controls .arrow#right {
+          right: 20px;
+}
+
+/*service-inside*/
+
+/*contacts*/
+.contact-detail-wrapper{
+	text-align: center;
+}
+.contact-form-wrapper{
+	margin: 0 auto;
+}
+.lera-photo-wrapper{
+	text-align: center;
+}
+/*contacts*/
+
 }
 
 
@@ -74,6 +110,12 @@
 @media screen and (max-width: 768px){
 
 /*header*/
+.lang-sep-wrapper{
+		position: absolute;
+		left:80px;
+		top: 10px;
+		background: none;
+	}
 
 .navbar-brand{
 	display: none;
@@ -85,6 +127,9 @@
 }
 .navbar-default .navbar-toggle .icon-bar{
 	background-color: #00bcbe;
+}
+#inside-page .lang-sep-wrapper{
+	top: 0;
 }
 
 

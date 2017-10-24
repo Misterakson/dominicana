@@ -35,18 +35,23 @@ $(document).ready(function(){
         items: 1,
         stagePadding: 250,
        responsive:{
-        0:{
+       //  0:{
+       //      items:1,
+       //      nav:true
+       //  },
+        350:{
             items:1,
-            nav:true
+            stagePadding: 0
+
         },
-        600:{
-            items:3,
-            nav:false
+        768:{
+            items:1,
+            stagePadding: 100
         },
-        1000:{
-            items:5,
-            nav:true,
-            loop:false
+        992:{
+            items:1,
+            loop:true,
+            stagePadding: 200
         },
     }
     });

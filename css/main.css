@@ -1,3 +1,5 @@
+
+
 /*fonts*/
 @font-face{
 	font-family: Open sans;
@@ -21,7 +23,10 @@ body{
 .navbar-default .navbar-nav>li>a{
 	color: #2d2d2d;
 }
-
+.my-container{
+	padding-left: 30px;
+	padding-right: 30px;
+}
 
 /*magnific gallery css*/
 .photo-mix{
@@ -201,6 +206,17 @@ footer h6{
 #footer_navbar a.menu-underline:after{
 	background: white;
 }
+
+footer .dom-time{
+	font-family: 'Century Gothic';
+	padding-top: 20px;
+	text-align: center;
+    letter-spacing: 4px;
+}
+.footer-social-wrapper{
+	text-align: center;
+}
+
 /*footer*/
 
 /* accordion */
@@ -416,7 +432,7 @@ a.underline-link:focus:after {
 	display: block;
     margin: 40px auto 0 auto;
     list-style: none;
-    text-align: center;
+    padding-left: 0;
 }
 .list-contact-head li {
 	display: block;
@@ -435,7 +451,6 @@ a.underline-link:focus:after {
 	background: #f0fbfc;
 	text-align: center;
 	width: 370px;
-	margin: 0 auto;
 	padding-top: 25px;
 	padding-bottom: 100px;
 }
@@ -470,7 +485,7 @@ a.underline-link:focus:after {
 .contact-form-wrapper .dom-time{
 	margin-top: 30px;
 }
-.contact-form-wrapper .dom-time i{
+.dom-time i{
 	color: #00bbc5;
 }
 
@@ -828,6 +843,19 @@ a.underline-link:focus:after {
 /*index page*/
 
 /*first section*/
+.lang-sep-wrapper{
+	padding: 15px;
+	float: right;
+}
+.active-lang{
+	color: #00bcbe;
+}
+.lang-sep{
+	cursor: pointer;
+}
+.main-page-desctop-menu{
+	margin-top: 0;
+}
 #main-page-header{
 	position: relative;
 	height: 700px;
@@ -842,6 +870,7 @@ a.underline-link:focus:after {
 	width:66.66666667%;
 	height: 100%;
 	background:url('../img/main_img.png') center center / cover;
+	z-index: -1;
 
 }
 #main-page-header .logo-container{

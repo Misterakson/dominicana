@@ -31,8 +31,8 @@
   </head>
   <body>
   <div class="body-wrapper">
-  <header>
-  <div class="container">
+  <header id="inside-page">
+  <div class="my-container">
     <nav class="navbar navbar-default " role="navigation">
     <div class="container-fluid">
     <!-- <!—Название сайта и кнопка раскрытия меню для мобильных-->
@@ -58,17 +58,18 @@
     <li><a href="#" class="menu-underline">контакты</a></li>
     <li><a href="#" class="menu-underline">отзывы</a></li>
     <li><a href="#" class="menu-underline">FAQ</a></li>
-    <li><a href="" style="display: inline-block;">RU</a> | <a href="" style="display: inline-block;">ENG</a></li>
     </ul>
     </div><!-- /.navbar-collapse -->
     </div><!-- /.container-fluid -->
     </nav>
+    <div class="lang-sep-wrapper"><span class="active-lang lang-sep">RU</span> | <span class="lang-sep">ENG</span></div>
+
     <h1 class="page_title">Часто задаваемые вопросы</h1>
   </div>
   </header>
 
 <section id="faq_content">
-<div class="container">
+<div class="my-container">
 	<div class="question_wrapper">
 		<div class="question_title">Title <img src="img/close.png" ></div>
 		<div class="question_body">text-here fdsfsdfsd fdsf sdf</div>
@@ -86,12 +87,12 @@
 
 
 
-  <footer>
+ <footer>
   <div class="container">
     <div class="row">
-      <div id="logo" class="col-md-4">
+      <div id="logo" class="col-md-3 col-sm-4">
       </div>
-      <div class="col-md-3">
+      <div class="col-md-2 col-sm-3 footer_navbar_wrapper">
         <h6>меню</h6>
         <ul id="footer_navbar">
           <li><a href="#" class="menu-underline">главная</a></li>
@@ -103,7 +104,7 @@
           <li><a href="#" class="menu-underline">FAQ</a></li> 
         </ul>
       </div>
-      <div class="col-md-3">
+      <div class="col-md-3 col-sm-5 col-xs-offset-1 col-xs-5">
         <h6>контакты</h6>
         <div id="footer_contacts">
           <span>Телефон<br>+380669709791</span>
@@ -112,13 +113,14 @@
           <span>Email<br>merenkovkonst@gmail.com</span>
         </div>
       </div>
-      <div class="col-md-2">
+      <div class="col-md-2 col-sm-2 col-xs-6 footer-social-wrapper">
         <h6>follow me</h6>
         <div class="social">
           <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-vk" aria-hidden="true"></i></a>
           <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
         </div>
+        <p class="dom-time">Время в доминикане <br> <i class="fa fa-clock-o" aria-hidden="true"></i> 03:15</p>
       </div>
     </div>
   </div>
@@ -129,7 +131,6 @@
   
   </footer>
 
-
 </div>
 
   <!-- jQuery first, then Tether, then Bootstrap JS. -->
@@ -137,6 +138,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
   <script src="js/jquery.magnific-popup.min.js" type="text/javascript"></script>
+  <script src="js/jquery.spincrement.js"></script>
   <script src="js/mixitup.min.js" type="text/javascript"></script>
   <script src="js/owl.carousel.min.js" type="text/javascript"></script>
   <script type="text/javascript" src="js/main.js"></script>

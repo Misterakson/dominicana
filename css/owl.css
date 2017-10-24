@@ -1,6 +1,7 @@
 #services-inside-page .carousel-wrapper{
 	position: relative;
 	padding-bottom: 30px;
+	height: 400px;
 }
 #services-inside-page .owl-stage{
 	height: 400px;
